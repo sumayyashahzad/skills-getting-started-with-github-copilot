@@ -106,11 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Refresh activities list so the new participant is shown immediately
         fetchActivities();
-
-        // Also reload the page automatically after a short delay so users see the updated page
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
