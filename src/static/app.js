@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Refresh activities list so the new participant is shown immediately
         fetchActivities();
+س
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
